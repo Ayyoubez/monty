@@ -16,7 +16,7 @@ void _sub(stack_t **head, unsigned int counter)
 		temp = temp->next;
 	if (i < 2)
 	{
-		fprintf(stderr, "L%d: can't add, stack too short\n", counter);
+		fprintf(stderr, "L%d: can't sub, stack too short\n", counter);
 		fclose(note.file);
 		free(note.content);
 		frees(*head);
