@@ -80,7 +80,7 @@ int execute(char *content, stack_t **stack, unsigned int counter, FILE *file);
 void _swap(stack_t **head, unsigned int counter);
 void _mul(stack_t **head, unsigned int counter);
 
-
+void _mod(stack_t **head, unsigned int counter);
 
 
 
