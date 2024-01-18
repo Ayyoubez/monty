@@ -13,6 +13,7 @@ int execute(char *content, stack_t **stack, unsigned int counter, FILE *file)
 	instruction_t option[] = {
 				{"push", _push}, {"pall", _pall}, {"pint", _pint},
 				{"pop", _pop},
+				{"swap", _swap},
 				{"add", _add},
 				{"nop", _nop},
 				{"div", _div},
