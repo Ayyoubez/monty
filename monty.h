@@ -1,6 +1,8 @@
 #ifndef MONTY_H
 #define MONTY_H
 
+#define _POSIX_C_SOURCE 200809L
+
 #include<stdio.h>
 #include<stdlib.h>
 #include<sys/types.h>
@@ -74,7 +76,7 @@ void _pop(stack_t **head, unsigned int counter);
 void _sub(stack_t **head, unsigned int counter);
 void _nop(stack_t **head, unsigned int counter);
 int execute(char *content, stack_t **stack, unsigned int counter, FILE *file);
-ssize_t _getline(char **line, size_t *n, FILE *stream);
+
 
 
 

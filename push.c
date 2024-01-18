@@ -18,7 +18,7 @@ void _push(stack_t **head, unsigned int counter)
 			i++;
 		for (; note.arg[i] != '\0'; i++)
 		{
-			if (note.arg[i] > '9' || note.arg[i] < '0')
+			if (note.arg[i] > 57 || note.arg[i] < 48)
 				flag = 1;
 		}
 		if (flag == 1)
