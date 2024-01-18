@@ -45,10 +45,11 @@ typedef struct instruction_s
 } instruction_t;
 
 /**
-*
-*
-*
-*
+* struct file_s - arguments line content
+* @arg: arguments
+* @file: file stream
+* @line: flag change
+* @content: line content
 */
 
 typedef struct file_s

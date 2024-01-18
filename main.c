@@ -8,7 +8,7 @@ file_t note = {NULL, NULL, NULL, 0};
 * Return: 0 on success
 */
 
-int main(int argc, char **argv)
+int main(int argc, char *argv[])
 {
 	FILE *file;
 	ssize_t read_line = 1;
@@ -37,7 +37,7 @@ int main(int argc, char **argv)
 		}
 		free(content);
 	}
-	free(stack);
+	frees(stack);
 	fclose(file);
 return (0);
 }
