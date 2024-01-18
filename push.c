@@ -23,7 +23,7 @@ void _push(stack_t **head, unsigned int counter)
 		}
 		if (flag == 1)
 		{
-			fprintf(stderr, "L%d: usage: push integer\n", counter);
+			fprintf(stderr, "L%d:usage: push integer\n", counter);
 			fclose(note.file);
 			free(note.content);
 			frees(*head);
@@ -32,7 +32,7 @@ void _push(stack_t **head, unsigned int counter)
 	}
 	else
 	{
-		fprintf(stderr, "L%d: usage: push integer\n", counter);
+		fprintf(stderr, "L%d: usage:push integer\n", counter);
 		fclose(note.file);
 		free(note.content);
 		frees(*head);
