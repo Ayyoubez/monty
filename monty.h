@@ -9,7 +9,6 @@
 #include<fcntl.h>
 #include<ctype.h>
 
-#define MAX_LINE_LENGTH 1024
 
 
 /**
@@ -75,7 +74,7 @@ void _pop(stack_t **head, unsigned int counter);
 void _sub(stack_t **head, unsigned int counter);
 void _nop(stack_t **head, unsigned int counter);
 int execute(char *content, stack_t **stack, unsigned int counter, FILE *file);
-
+ssize_t _getline(char **line, size_t *n, FILE *stream);
 
 
 
