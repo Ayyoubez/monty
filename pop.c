@@ -7,7 +7,7 @@
 * Return: nothing
 */
 
-void _pop(stack_t **head, insigned int counter)
+void _pop(stack_t **head, unsigned int counter)
 {
 	stack_t *h;
 

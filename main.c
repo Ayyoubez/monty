@@ -1,5 +1,5 @@
 #include "monty.h"
-
+#include <stdio.h>
 file_t note = {NULL, NULL, NULL, 0};
 
 /**

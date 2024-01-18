@@ -4,9 +4,12 @@
 #include<stdio.h>
 #include<stdlib.h>
 #include<sys/types.h>
+#include<string.h>
+#include<unistd.h>
+#include<fcntl.h>
+#include<ctype.h>
 
-
-
+#define MAX_LINE_LENGTH 1024
 
 
 /**
@@ -63,9 +66,15 @@ void add_node(stack_t **head, int n);
 void f_stack(stack_t **head, unsigned int counter);
 void f_queue(stack_t **head, unsigned int counter);
 void add_queue(stack_t **head, int n);
+void _add(stack_t **head, unsigned int counter);
 void _push(stack_t **head, unsigned int counter);
 void _pall(stack_t **head, unsigned int counter);
-
+void _div(stack_t **head, unsigned int counter);
+void _pint(stack_t **head, unsigned int counter);
+void _pop(stack_t **head, unsigned int counter);
+void _sub(stack_t **head, unsigned int counter);
+void _nop(stack_t **head, unsigned int counter);
+int execute(char *content, stack_t **stack, unsigned int counter, FILE *file);
 
 
 
